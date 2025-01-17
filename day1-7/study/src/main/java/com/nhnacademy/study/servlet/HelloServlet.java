@@ -1,4 +1,4 @@
-package com.nhnacademy.study;
+package com.nhnacademy.study.servlet;
 
 import java.io.*;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package com.nhnacademy.study;
+package com.nhnacademy.study.servlet;
 
 import com.nhnacademy.study.utils.CounterUtils;
 import jakarta.servlet.ServletConfig;

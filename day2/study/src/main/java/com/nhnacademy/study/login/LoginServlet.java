@@ -63,11 +63,10 @@ public class LoginServlet extends HttpServlet {
             response.sendRedirect("/login");
         }else{
             log.error("아이디/패스워드가 일치하지 않습니다.");
-            //response.sendRedirect("/login.html");
+            response.sendRedirect("/login.html");
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login.html");
             requestDispatcher.forward(request, response);
-            log.error("id : {}", id);
-
+            log.error("id : {}",id);
         }
     }
 }
