@@ -1,7 +1,7 @@
 package com.nhnacademy;
 
 import com.beust.jcommander.Parameter;
-
+//웹서버와 Java Application 사이에서 서로 통신할 수 있도록 한 JCGI가 있어야 함
 public class CgiArgs {
 
     @Parameter(names = {"-content-type"})
