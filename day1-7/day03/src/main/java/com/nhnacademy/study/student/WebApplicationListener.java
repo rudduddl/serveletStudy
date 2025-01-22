@@ -1,5 +1,6 @@
 package com.nhnacademy.study.student;
 
+import com.nhnacademy.study.JsonStudentRepository;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
@@ -15,7 +16,7 @@ public class WebApplicationListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         Random random = new Random();
         ServletContext context = sce.getServletContext();
-        StudentRepository studentRepository = new MapStudentRepository();
+        StudentRepository studentRepository = new JsonStudentRepository();
 
         // 랜덤 학생 데이터 생성 및 저장
         for (int i = 1; i <= 10; i++) {
